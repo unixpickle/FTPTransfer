@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FTPProxy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>FTPTransfer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>FA972402185BAD2E0062DA09</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA97241C185BAD9C0062DA09</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA972428185BAD9C0062DA09</key>
 		<dict>
 			<key>primary</key>
 			<true/>

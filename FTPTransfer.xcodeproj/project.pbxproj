@@ -14,21 +14,13 @@
 		FA9723F9185BAD2E0062DA09 /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9723F8185BAD2E0062DA09 /* ANAppDelegate.m */; };
 		FA9723FC185BAD2E0062DA09 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9723FA185BAD2E0062DA09 /* MainMenu.xib */; };
 		FA9723FE185BAD2E0062DA09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9723FD185BAD2E0062DA09 /* Images.xcassets */; };
-		FA972405185BAD2E0062DA09 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA972404185BAD2E0062DA09 /* XCTest.framework */; };
-		FA972406185BAD2E0062DA09 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9723E5185BAD2E0062DA09 /* Cocoa.framework */; };
-		FA97240E185BAD2E0062DA09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA97240C185BAD2E0062DA09 /* InfoPlist.strings */; };
-		FA972410185BAD2E0062DA09 /* FTPTransferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA97240F185BAD2E0062DA09 /* FTPTransferTests.m */; };
+		FA97241E185BAD9C0062DA09 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9723E5185BAD2E0062DA09 /* Cocoa.framework */; };
+		FAD4C47F185CEDA2000DE808 /* FPListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C475185CEDA2000DE808 /* FPListRequest.m */; };
+		FAD4C480185CEDA2000DE808 /* FPReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C477185CEDA2000DE808 /* FPReadable.m */; };
+		FAD4C481185CEDA2000DE808 /* FPReadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C479185CEDA2000DE808 /* FPReadRequest.m */; };
+		FAD4C482185CEDA2000DE808 /* FPWritable.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C47C185CEDA2000DE808 /* FPWritable.m */; };
+		FAD4C483185CEDA2000DE808 /* FPWriteData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C47E185CEDA2000DE808 /* FPWriteData.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FA972407185BAD2E0062DA09 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA9723DA185BAD2E0062DA09 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA9723E1185BAD2E0062DA09;
-			remoteInfo = FTPTransfer;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FA9723E2185BAD2E0062DA09 /* FTPTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,11 +37,19 @@
 		FA9723F8185BAD2E0062DA09 /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
 		FA9723FB185BAD2E0062DA09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FA9723FD185BAD2E0062DA09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FA972403185BAD2E0062DA09 /* FTPTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTPTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA972404185BAD2E0062DA09 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FA97240B185BAD2E0062DA09 /* FTPTransferTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FTPTransferTests-Info.plist"; sourceTree = "<group>"; };
-		FA97240D185BAD2E0062DA09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FA97240F185BAD2E0062DA09 /* FTPTransferTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTPTransferTests.m; sourceTree = "<group>"; };
+		FA97241D185BAD9C0062DA09 /* FTPProxy.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = FTPProxy.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA972421185BAD9C0062DA09 /* FTPProxy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTPProxy-Prefix.pch"; sourceTree = "<group>"; };
+		FAD4C474185CEDA2000DE808 /* FPListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPListRequest.h; sourceTree = "<group>"; };
+		FAD4C475185CEDA2000DE808 /* FPListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPListRequest.m; sourceTree = "<group>"; };
+		FAD4C476185CEDA2000DE808 /* FPReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPReadable.h; sourceTree = "<group>"; };
+		FAD4C477185CEDA2000DE808 /* FPReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPReadable.m; sourceTree = "<group>"; };
+		FAD4C478185CEDA2000DE808 /* FPReadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPReadRequest.h; sourceTree = "<group>"; };
+		FAD4C479185CEDA2000DE808 /* FPReadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPReadRequest.m; sourceTree = "<group>"; };
+		FAD4C47B185CEDA2000DE808 /* FPWritable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPWritable.h; sourceTree = "<group>"; };
+		FAD4C47C185CEDA2000DE808 /* FPWritable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWritable.m; sourceTree = "<group>"; };
+		FAD4C47D185CEDA2000DE808 /* FPWriteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPWriteData.h; sourceTree = "<group>"; };
+		FAD4C47E185CEDA2000DE808 /* FPWriteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWriteData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +61,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA972400185BAD2E0062DA09 /* Frameworks */ = {
+		FA97241A185BAD9C0062DA09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA972406185BAD2E0062DA09 /* Cocoa.framework in Frameworks */,
-				FA972405185BAD2E0062DA09 /* XCTest.framework in Frameworks */,
+				FA97241E185BAD9C0062DA09 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				FA9723EB185BAD2E0062DA09 /* FTPTransfer */,
-				FA972409185BAD2E0062DA09 /* FTPTransferTests */,
+				FA97241F185BAD9C0062DA09 /* FTPProxy */,
 				FA9723E4185BAD2E0062DA09 /* Frameworks */,
 				FA9723E3185BAD2E0062DA09 /* Products */,
 			);
@@ -87,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				FA9723E2185BAD2E0062DA09 /* FTPTransfer.app */,
-				FA972403185BAD2E0062DA09 /* FTPTransferTests.xctest */,
+				FA97241D185BAD9C0062DA09 /* FTPProxy.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,25 +135,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FA972409185BAD2E0062DA09 /* FTPTransferTests */ = {
+		FA97241F185BAD9C0062DA09 /* FTPProxy */ = {
 			isa = PBXGroup;
 			children = (
-				FA97240F185BAD2E0062DA09 /* FTPTransferTests.m */,
-				FA97240A185BAD2E0062DA09 /* Supporting Files */,
+				FAD4C473185CEDA2000DE808 /* Readable */,
+				FAD4C47A185CEDA2000DE808 /* Writable */,
+				FA972420185BAD9C0062DA09 /* Supporting Files */,
 			);
-			path = FTPTransferTests;
+			path = FTPProxy;
 			sourceTree = "<group>";
 		};
-		FA97240A185BAD2E0062DA09 /* Supporting Files */ = {
+		FA972420185BAD9C0062DA09 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FA97240B185BAD2E0062DA09 /* FTPTransferTests-Info.plist */,
-				FA97240C185BAD2E0062DA09 /* InfoPlist.strings */,
+				FA972421185BAD9C0062DA09 /* FTPProxy-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FAD4C473185CEDA2000DE808 /* Readable */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4C474185CEDA2000DE808 /* FPListRequest.h */,
+				FAD4C475185CEDA2000DE808 /* FPListRequest.m */,
+				FAD4C476185CEDA2000DE808 /* FPReadable.h */,
+				FAD4C477185CEDA2000DE808 /* FPReadable.m */,
+				FAD4C478185CEDA2000DE808 /* FPReadRequest.h */,
+				FAD4C479185CEDA2000DE808 /* FPReadRequest.m */,
+			);
+			path = Readable;
+			sourceTree = "<group>";
+		};
+		FAD4C47A185CEDA2000DE808 /* Writable */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4C47B185CEDA2000DE808 /* FPWritable.h */,
+				FAD4C47C185CEDA2000DE808 /* FPWritable.m */,
+				FAD4C47D185CEDA2000DE808 /* FPWriteData.h */,
+				FAD4C47E185CEDA2000DE808 /* FPWriteData.m */,
+			);
+			path = Writable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA97241B185BAD9C0062DA09 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FA9723E1185BAD2E0062DA09 /* FTPTransfer */ = {
@@ -174,23 +207,22 @@
 			productReference = FA9723E2185BAD2E0062DA09 /* FTPTransfer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FA972402185BAD2E0062DA09 /* FTPTransferTests */ = {
+		FA97241C185BAD9C0062DA09 /* FTPProxy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA972416185BAD2E0062DA09 /* Build configuration list for PBXNativeTarget "FTPTransferTests" */;
+			buildConfigurationList = FA972437185BAD9D0062DA09 /* Build configuration list for PBXNativeTarget "FTPProxy" */;
 			buildPhases = (
-				FA9723FF185BAD2E0062DA09 /* Sources */,
-				FA972400185BAD2E0062DA09 /* Frameworks */,
-				FA972401185BAD2E0062DA09 /* Resources */,
+				FA972419185BAD9C0062DA09 /* Sources */,
+				FA97241A185BAD9C0062DA09 /* Frameworks */,
+				FA97241B185BAD9C0062DA09 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FA972408185BAD2E0062DA09 /* PBXTargetDependency */,
 			);
-			name = FTPTransferTests;
-			productName = FTPTransferTests;
-			productReference = FA972403185BAD2E0062DA09 /* FTPTransferTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = FTPProxy;
+			productName = FTPProxy;
+			productReference = FA97241D185BAD9C0062DA09 /* FTPProxy.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,11 +233,6 @@
 				CLASSPREFIX = AN;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alex Nichol";
-				TargetAttributes = {
-					FA972402185BAD2E0062DA09 = {
-						TestTargetID = FA9723E1185BAD2E0062DA09;
-					};
-				};
 			};
 			buildConfigurationList = FA9723DD185BAD2E0062DA09 /* Build configuration list for PBXProject "FTPTransfer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -221,7 +248,7 @@
 			projectRoot = "";
 			targets = (
 				FA9723E1185BAD2E0062DA09 /* FTPTransfer */,
-				FA972402185BAD2E0062DA09 /* FTPTransferTests */,
+				FA97241C185BAD9C0062DA09 /* FTPProxy */,
 			);
 		};
 /* End PBXProject section */
@@ -238,14 +265,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA972401185BAD2E0062DA09 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA97240E185BAD2E0062DA09 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -254,27 +273,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9723F2185BAD2E0062DA09 /* main.m in Sources */,
+				FAD4C480185CEDA2000DE808 /* FPReadable.m in Sources */,
 				FA9723F9185BAD2E0062DA09 /* ANAppDelegate.m in Sources */,
+				FAD4C483185CEDA2000DE808 /* FPWriteData.m in Sources */,
+				FAD4C482185CEDA2000DE808 /* FPWritable.m in Sources */,
+				FAD4C47F185CEDA2000DE808 /* FPListRequest.m in Sources */,
+				FAD4C481185CEDA2000DE808 /* FPReadRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA9723FF185BAD2E0062DA09 /* Sources */ = {
+		FA972419185BAD9C0062DA09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA972410185BAD2E0062DA09 /* FTPTransferTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FA972408185BAD2E0062DA09 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA9723E1185BAD2E0062DA09 /* FTPTransfer */;
-			targetProxy = FA972407185BAD2E0062DA09 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA9723EE185BAD2E0062DA09 /* InfoPlist.strings */ = {
@@ -299,14 +314,6 @@
 				FA9723FB185BAD2E0062DA09 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		FA97240C185BAD2E0062DA09 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA97240D185BAD2E0062DA09 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,43 +413,29 @@
 			};
 			name = Release;
 		};
-		FA972417185BAD2E0062DA09 /* Debug */ = {
+		FA972438185BAD9D0062DA09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FTPTransfer.app/Contents/MacOS/FTPTransfer";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FTPTransfer/FTPTransfer-Prefix.pch";
+				GCC_PREFIX_HEADER = "FTPProxy/FTPProxy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "FTPTransferTests/FTPTransferTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		FA972418185BAD2E0062DA09 /* Release */ = {
+		FA972439185BAD9D0062DA09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FTPTransfer.app/Contents/MacOS/FTPTransfer";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FTPTransfer/FTPTransfer-Prefix.pch";
-				INFOPLIST_FILE = "FTPTransferTests/FTPTransferTests-Info.plist";
+				GCC_PREFIX_HEADER = "FTPProxy/FTPProxy-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -465,14 +458,16 @@
 				FA972415185BAD2E0062DA09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		FA972416185BAD2E0062DA09 /* Build configuration list for PBXNativeTarget "FTPTransferTests" */ = {
+		FA972437185BAD9D0062DA09 /* Build configuration list for PBXNativeTarget "FTPProxy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA972417185BAD2E0062DA09 /* Debug */,
-				FA972418185BAD2E0062DA09 /* Release */,
+				FA972438185BAD9D0062DA09 /* Debug */,
+				FA972439185BAD9D0062DA09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
