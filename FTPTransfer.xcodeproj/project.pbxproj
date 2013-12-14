@@ -20,6 +20,10 @@
 		FAD4C481185CEDA2000DE808 /* FPReadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C479185CEDA2000DE808 /* FPReadRequest.m */; };
 		FAD4C482185CEDA2000DE808 /* FPWritable.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C47C185CEDA2000DE808 /* FPWritable.m */; };
 		FAD4C483185CEDA2000DE808 /* FPWriteData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C47E185CEDA2000DE808 /* FPWriteData.m */; };
+		FAD4C486185CEDC8000DE808 /* FPDataSender.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD4C484185CEDC8000DE808 /* FPDataSender.h */; };
+		FAD4C487185CEDC8000DE808 /* FPDataSender.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C485185CEDC8000DE808 /* FPDataSender.m */; };
+		FAD4C48A185CEE42000DE808 /* FPSession.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD4C488185CEE42000DE808 /* FPSession.h */; };
+		FAD4C48B185CEE42000DE808 /* FPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C489185CEE42000DE808 /* FPSession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		FAD4C47C185CEDA2000DE808 /* FPWritable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWritable.m; sourceTree = "<group>"; };
 		FAD4C47D185CEDA2000DE808 /* FPWriteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPWriteData.h; sourceTree = "<group>"; };
 		FAD4C47E185CEDA2000DE808 /* FPWriteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWriteData.m; sourceTree = "<group>"; };
+		FAD4C484185CEDC8000DE808 /* FPDataSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDataSender.h; sourceTree = "<group>"; };
+		FAD4C485185CEDC8000DE808 /* FPDataSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDataSender.m; sourceTree = "<group>"; };
+		FAD4C488185CEE42000DE808 /* FPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSession.h; sourceTree = "<group>"; };
+		FAD4C489185CEE42000DE808 /* FPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSession.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,10 @@
 				FAD4C473185CEDA2000DE808 /* Readable */,
 				FAD4C47A185CEDA2000DE808 /* Writable */,
 				FA972420185BAD9C0062DA09 /* Supporting Files */,
+				FAD4C488185CEE42000DE808 /* FPSession.h */,
+				FAD4C489185CEE42000DE808 /* FPSession.m */,
+				FAD4C484185CEDC8000DE808 /* FPDataSender.h */,
+				FAD4C485185CEDC8000DE808 /* FPDataSender.m */,
 			);
 			path = FTPProxy;
 			sourceTree = "<group>";
@@ -184,6 +196,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD4C486185CEDC8000DE808 /* FPDataSender.h in Headers */,
+				FAD4C48A185CEE42000DE808 /* FPSession.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD4C48B185CEE42000DE808 /* FPSession.m in Sources */,
+				FAD4C487185CEDC8000DE808 /* FPDataSender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
