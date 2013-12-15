@@ -10,6 +10,7 @@
 
 @interface FPDataSender (Private)
 
+- (void)handleRemoteCreated;
 - (void)sendNextPacket;
 - (void)handlePacketSent;
 - (void)handleError:(NSError *)error;
@@ -28,6 +29,27 @@
         packets = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+- (void)initiateStream {
+    if (isEnded) @throw [NSException exceptionWithName:@"FPChannelClosed"
+                                                reason:@"Cannot initiate a closed stream"
+                                              userInfo:nil];
+    currentOpener = [[FPWriteData alloc] initWithData:[NSData data]];
+    currentOpener.username = self.username;
+    currentOpener.password = self.password;
+    currentOpener.url = [self urlForRoot];
+    __weak FPDataSender * weakSelf = self;
+    currentOpener.callback = ^(NSError * error) {
+        if (error) {
+            [weakSelf handleError:error];
+        } else {
+            [weakSelf handleRemoteCreated];
+        }
+    };
+    if (![currentOpener start]) {
+        [self handleError:[NSError errorWithDomain:@"FPWriteData" code:0 userInfo:nil]];
+    }
 }
 
 - (void)writeData:(NSData *)data {
@@ -55,7 +77,7 @@
         [packets addObject:[[FPDataPacket alloc] initWithType:FPDataPacketTypePayload body:packetBody]];
     }
     
-    if (!currentWriter) [self sendNextPacket];
+    if (!currentWriter && hasBegun) [self sendNextPacket];
 }
 
 - (void)endStream {
@@ -70,6 +92,8 @@
 - (void)forceClose {
     [currentWriter cancel];
     currentWriter = nil;
+    [currentOpener cancel];
+    currentOpener = nil;
     [packets removeAllObjects];
     packets = nil;
     isEnded = YES;
@@ -81,10 +105,21 @@
 
 #pragma mark - Private -
 
+- (void)handleRemoteCreated {
+    hasBegun = YES;
+    currentOpener = nil;
+    if (packets.count != 0) {
+        [self sendNextPacket];
+    }
+}
+
 - (void)sendNextPacket {
     currentWriter = nil;
     if (packets.count == 0) {
         if (isEnded) [self.delegate fpDataSenderEnded:self];
+        else {
+            [self.delegate fpDataSenderBufferEmpty:self];
+        }
         return;
     }
     
@@ -108,7 +143,6 @@
     };
     
     if (![currentWriter start]) {
-        currentWriter = nil;
         [self handleError:[NSError errorWithDomain:@"FPWriteData" code:0 userInfo:nil]];
     }
 }
@@ -128,12 +162,14 @@
         }
     };
     if (![currentWriter start]) {
-        currentWriter = nil;
         [self handleError:[NSError errorWithDomain:@"FPWriteData" code:0 userInfo:nil]];
     }
 }
 
 - (void)handleError:(NSError *)error {
+    currentOpener = nil;
+    currentWriter = nil;
+    isEnded = YES;
     [self.delegate fpDataSender:self failedWithError:error];
 }
 

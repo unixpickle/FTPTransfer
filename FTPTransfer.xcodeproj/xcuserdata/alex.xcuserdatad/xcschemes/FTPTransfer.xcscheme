@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA972428185BAD9C0062DA09"
+               BlueprintIdentifier = "FA20D4A2185D722400F8CD0B"
                BuildableName = "FTPProxyTests.xctest"
                BlueprintName = "FTPProxyTests"
                ReferencedContainer = "container:FTPTransfer.xcodeproj">

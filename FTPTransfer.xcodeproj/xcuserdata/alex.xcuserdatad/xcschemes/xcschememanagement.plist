@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Build All.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>FTPProxy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>FA20D492185D722300F8CD0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA20D4A2185D722400F8CD0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA20D4CD185D72AD00F8CD0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FA9723E1185BAD2E0062DA09</key>
 		<dict>
 			<key>primary</key>

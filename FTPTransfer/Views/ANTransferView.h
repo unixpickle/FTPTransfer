@@ -1,5 +1,5 @@
 //
-//  ANSenderView.h
+//  ANTransferView.h
 //  FTPTransfer
 //
 //  Created by Alex Nichol on 12/14/13.
@@ -7,14 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ANTransfer.h"
 
-@interface ANSenderView : NSView {
+@interface ANTransferView : NSView <ANTransferDelegate> {
     IBOutlet NSTextField * statusLabel;
     IBOutlet NSProgressIndicator * progress;
     IBOutlet NSTextField * bytesLabel;
     IBOutlet NSTextField * filesLabel;
+    ANTransfer * transfer;
 }
 
+@property (nonatomic, copy) void (^doneCallback)();
+
+- (void)setTransfer:(ANTransfer *)aTransfer;
 - (IBAction)cancelPressed:(id)sender;
 
 @end

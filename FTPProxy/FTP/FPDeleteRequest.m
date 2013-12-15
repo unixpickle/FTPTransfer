@@ -40,7 +40,7 @@
 
 - (void)backgroundMethod {
     @autoreleasepool {
-        uint32_t error;
+        SInt32 error;
         Boolean result = CFURLDestroyResource((__bridge CFURLRef)[self authenticatedURL], &error); // I know, it's deprecated :/
         if ([NSThread currentThread].isCancelled) return;
         dispatch_sync(dispatch_get_main_queue(), ^{

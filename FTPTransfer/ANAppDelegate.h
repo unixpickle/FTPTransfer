@@ -7,7 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ANMainWindow.h"
 
-@interface ANAppDelegate : NSObject <NSApplicationDelegate>
+@interface ANAppDelegate : NSObject <NSApplicationDelegate> {
+    NSMutableArray * windows;
+}
+
+- (IBAction)createNewWindow:(id)sender;
+- (id)createClass:(Class)c fromNib:(NSString *)name;
 
 @end

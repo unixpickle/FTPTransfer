@@ -11,7 +11,7 @@
 @implementation FPReadRequest
 
 - (void)handleFTPError:(NSError *)error {
-    self.callback(error, nil);
+    self.callback(error, nil, YES);
 }
 
 - (void)handleFTPData:(NSData *)data {

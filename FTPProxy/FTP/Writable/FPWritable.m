@@ -57,6 +57,7 @@ static NSMutableArray * writables = nil;
     }
     if (![writables containsObject:self]) [writables addObject:self];
     
+    if (buffer.length > 0) [self writeLoop];
     return YES;
 }
 
@@ -119,6 +120,7 @@ static NSMutableArray * writables = nil;
 }
 
 - (void)writeLoop {
+    if (!stream) return;
     while (CFWriteStreamCanAcceptBytes(stream)) {
         if (!buffer.length) {
             if (self.isComplete) {
@@ -142,7 +144,5 @@ static NSMutableArray * writables = nil;
 
 static void _FPWritableCallback(CFWriteStreamRef stream, CFStreamEventType type, void * clientCallBackInfo) {
     FPWritable * transfer = (__bridge FPWritable *)clientCallBackInfo;
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        [transfer handleFTPEvent:type];
-    });
+    [transfer handleFTPEvent:type];
 }

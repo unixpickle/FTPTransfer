@@ -11,7 +11,9 @@
 @implementation FPSession
 
 - (NSURL *)urlForRoot {
-    return [[NSURL alloc] initWithScheme:@"ftp" host:self.remoteHost path:[self.remoteDirectory stringByAppendingString:@"/"]];
+    NSString * dirPath = self.remoteDirectory;
+    if (![dirPath hasSuffix:@"/"]) dirPath = [dirPath stringByAppendingString:@"/"];
+    return [[NSURL alloc] initWithScheme:@"ftp" host:self.remoteHost path:dirPath];
 }
 
 - (NSURL *)urlForContainedFile:(NSString *)filename {
