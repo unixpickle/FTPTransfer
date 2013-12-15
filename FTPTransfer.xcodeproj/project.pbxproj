@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA20D410185D561900F8CD0B /* FPDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D403185D561900F8CD0B /* FPDeleteRequest.m */; };
+		FA20D411185D561900F8CD0B /* FPListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D406185D561900F8CD0B /* FPListRequest.m */; };
+		FA20D412185D561900F8CD0B /* FPReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D408185D561900F8CD0B /* FPReadable.m */; };
+		FA20D413185D561900F8CD0B /* FPReadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D40A185D561900F8CD0B /* FPReadRequest.m */; };
+		FA20D414185D561900F8CD0B /* FPWritable.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D40D185D561900F8CD0B /* FPWritable.m */; };
+		FA20D415185D561900F8CD0B /* FPWriteData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D40F185D561900F8CD0B /* FPWriteData.m */; };
+		FA20D41F185D562F00F8CD0B /* FPDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D418185D562F00F8CD0B /* FPDataPacket.m */; };
+		FA20D420185D562F00F8CD0B /* FPDataReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D41A185D562F00F8CD0B /* FPDataReceiver.m */; };
+		FA20D421185D562F00F8CD0B /* FPDataSender.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D41C185D562F00F8CD0B /* FPDataSender.m */; };
+		FA20D422185D562F00F8CD0B /* FPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D41E185D562F00F8CD0B /* FPSession.m */; };
+		FA20D464185D65C100F8CD0B /* ANConnectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA20D463185D65C100F8CD0B /* ANConnectView.xib */; };
+		FA20D467185D65D500F8CD0B /* ANConnectView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D466185D65D500F8CD0B /* ANConnectView.m */; };
+		FA20D46B185D6A8400F8CD0B /* ANSenderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA20D46A185D6A8400F8CD0B /* ANSenderView.xib */; };
+		FA20D46D185D6A9B00F8CD0B /* ANReceiverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA20D46C185D6A9B00F8CD0B /* ANReceiverView.xib */; };
+		FA20D470185D6B7800F8CD0B /* ANSenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D46F185D6B7800F8CD0B /* ANSenderView.m */; };
+		FA20D473185D6B8100F8CD0B /* ANReceiverView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D472185D6B8100F8CD0B /* ANReceiverView.m */; };
 		FA9723E6185BAD2E0062DA09 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9723E5185BAD2E0062DA09 /* Cocoa.framework */; };
 		FA9723F0185BAD2E0062DA09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA9723EE185BAD2E0062DA09 /* InfoPlist.strings */; };
 		FA9723F2185BAD2E0062DA09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9723F1185BAD2E0062DA09 /* main.m */; };
@@ -15,18 +31,38 @@
 		FA9723FC185BAD2E0062DA09 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9723FA185BAD2E0062DA09 /* MainMenu.xib */; };
 		FA9723FE185BAD2E0062DA09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9723FD185BAD2E0062DA09 /* Images.xcassets */; };
 		FA97241E185BAD9C0062DA09 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9723E5185BAD2E0062DA09 /* Cocoa.framework */; };
-		FAD4C47F185CEDA2000DE808 /* FPListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C475185CEDA2000DE808 /* FPListRequest.m */; };
-		FAD4C480185CEDA2000DE808 /* FPReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C477185CEDA2000DE808 /* FPReadable.m */; };
-		FAD4C481185CEDA2000DE808 /* FPReadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C479185CEDA2000DE808 /* FPReadRequest.m */; };
-		FAD4C482185CEDA2000DE808 /* FPWritable.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C47C185CEDA2000DE808 /* FPWritable.m */; };
-		FAD4C483185CEDA2000DE808 /* FPWriteData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C47E185CEDA2000DE808 /* FPWriteData.m */; };
-		FAD4C486185CEDC8000DE808 /* FPDataSender.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD4C484185CEDC8000DE808 /* FPDataSender.h */; };
-		FAD4C487185CEDC8000DE808 /* FPDataSender.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C485185CEDC8000DE808 /* FPDataSender.m */; };
-		FAD4C48A185CEE42000DE808 /* FPSession.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD4C488185CEE42000DE808 /* FPSession.h */; };
-		FAD4C48B185CEE42000DE808 /* FPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD4C489185CEE42000DE808 /* FPSession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA20D402185D561900F8CD0B /* FPDeleteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDeleteRequest.h; sourceTree = "<group>"; };
+		FA20D403185D561900F8CD0B /* FPDeleteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDeleteRequest.m; sourceTree = "<group>"; };
+		FA20D405185D561900F8CD0B /* FPListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPListRequest.h; sourceTree = "<group>"; };
+		FA20D406185D561900F8CD0B /* FPListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPListRequest.m; sourceTree = "<group>"; };
+		FA20D407185D561900F8CD0B /* FPReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPReadable.h; sourceTree = "<group>"; };
+		FA20D408185D561900F8CD0B /* FPReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPReadable.m; sourceTree = "<group>"; };
+		FA20D409185D561900F8CD0B /* FPReadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPReadRequest.h; sourceTree = "<group>"; };
+		FA20D40A185D561900F8CD0B /* FPReadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPReadRequest.m; sourceTree = "<group>"; };
+		FA20D40C185D561900F8CD0B /* FPWritable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPWritable.h; sourceTree = "<group>"; };
+		FA20D40D185D561900F8CD0B /* FPWritable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWritable.m; sourceTree = "<group>"; };
+		FA20D40E185D561900F8CD0B /* FPWriteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPWriteData.h; sourceTree = "<group>"; };
+		FA20D40F185D561900F8CD0B /* FPWriteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWriteData.m; sourceTree = "<group>"; };
+		FA20D417185D562F00F8CD0B /* FPDataPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDataPacket.h; sourceTree = "<group>"; };
+		FA20D418185D562F00F8CD0B /* FPDataPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDataPacket.m; sourceTree = "<group>"; };
+		FA20D419185D562F00F8CD0B /* FPDataReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDataReceiver.h; sourceTree = "<group>"; };
+		FA20D41A185D562F00F8CD0B /* FPDataReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDataReceiver.m; sourceTree = "<group>"; };
+		FA20D41B185D562F00F8CD0B /* FPDataSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDataSender.h; sourceTree = "<group>"; };
+		FA20D41C185D562F00F8CD0B /* FPDataSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDataSender.m; sourceTree = "<group>"; };
+		FA20D41D185D562F00F8CD0B /* FPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSession.h; sourceTree = "<group>"; };
+		FA20D41E185D562F00F8CD0B /* FPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSession.m; sourceTree = "<group>"; };
+		FA20D463185D65C100F8CD0B /* ANConnectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANConnectView.xib; sourceTree = "<group>"; };
+		FA20D465185D65D500F8CD0B /* ANConnectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANConnectView.h; sourceTree = "<group>"; };
+		FA20D466185D65D500F8CD0B /* ANConnectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANConnectView.m; sourceTree = "<group>"; };
+		FA20D46A185D6A8400F8CD0B /* ANSenderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANSenderView.xib; sourceTree = "<group>"; };
+		FA20D46C185D6A9B00F8CD0B /* ANReceiverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ANReceiverView.xib; sourceTree = "<group>"; };
+		FA20D46E185D6B7800F8CD0B /* ANSenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSenderView.h; sourceTree = "<group>"; };
+		FA20D46F185D6B7800F8CD0B /* ANSenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSenderView.m; sourceTree = "<group>"; };
+		FA20D471185D6B8100F8CD0B /* ANReceiverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANReceiverView.h; sourceTree = "<group>"; };
+		FA20D472185D6B8100F8CD0B /* ANReceiverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANReceiverView.m; sourceTree = "<group>"; };
 		FA9723E2185BAD2E0062DA09 /* FTPTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9723E5185BAD2E0062DA09 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FA9723E8185BAD2E0062DA09 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -44,20 +80,6 @@
 		FA972404185BAD2E0062DA09 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FA97241D185BAD9C0062DA09 /* FTPProxy.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = FTPProxy.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA972421185BAD9C0062DA09 /* FTPProxy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTPProxy-Prefix.pch"; sourceTree = "<group>"; };
-		FAD4C474185CEDA2000DE808 /* FPListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPListRequest.h; sourceTree = "<group>"; };
-		FAD4C475185CEDA2000DE808 /* FPListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPListRequest.m; sourceTree = "<group>"; };
-		FAD4C476185CEDA2000DE808 /* FPReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPReadable.h; sourceTree = "<group>"; };
-		FAD4C477185CEDA2000DE808 /* FPReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPReadable.m; sourceTree = "<group>"; };
-		FAD4C478185CEDA2000DE808 /* FPReadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPReadRequest.h; sourceTree = "<group>"; };
-		FAD4C479185CEDA2000DE808 /* FPReadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPReadRequest.m; sourceTree = "<group>"; };
-		FAD4C47B185CEDA2000DE808 /* FPWritable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPWritable.h; sourceTree = "<group>"; };
-		FAD4C47C185CEDA2000DE808 /* FPWritable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWritable.m; sourceTree = "<group>"; };
-		FAD4C47D185CEDA2000DE808 /* FPWriteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPWriteData.h; sourceTree = "<group>"; };
-		FAD4C47E185CEDA2000DE808 /* FPWriteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWriteData.m; sourceTree = "<group>"; };
-		FAD4C484185CEDC8000DE808 /* FPDataSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDataSender.h; sourceTree = "<group>"; };
-		FAD4C485185CEDC8000DE808 /* FPDataSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDataSender.m; sourceTree = "<group>"; };
-		FAD4C488185CEE42000DE808 /* FPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSession.h; sourceTree = "<group>"; };
-		FAD4C489185CEE42000DE808 /* FPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSession.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +102,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA20D401185D561900F8CD0B /* FTP */ = {
+			isa = PBXGroup;
+			children = (
+				FA20D402185D561900F8CD0B /* FPDeleteRequest.h */,
+				FA20D403185D561900F8CD0B /* FPDeleteRequest.m */,
+				FA20D404185D561900F8CD0B /* Readable */,
+				FA20D40B185D561900F8CD0B /* Writable */,
+			);
+			path = FTP;
+			sourceTree = "<group>";
+		};
+		FA20D404185D561900F8CD0B /* Readable */ = {
+			isa = PBXGroup;
+			children = (
+				FA20D405185D561900F8CD0B /* FPListRequest.h */,
+				FA20D406185D561900F8CD0B /* FPListRequest.m */,
+				FA20D407185D561900F8CD0B /* FPReadable.h */,
+				FA20D408185D561900F8CD0B /* FPReadable.m */,
+				FA20D409185D561900F8CD0B /* FPReadRequest.h */,
+				FA20D40A185D561900F8CD0B /* FPReadRequest.m */,
+			);
+			path = Readable;
+			sourceTree = "<group>";
+		};
+		FA20D40B185D561900F8CD0B /* Writable */ = {
+			isa = PBXGroup;
+			children = (
+				FA20D40C185D561900F8CD0B /* FPWritable.h */,
+				FA20D40D185D561900F8CD0B /* FPWritable.m */,
+				FA20D40E185D561900F8CD0B /* FPWriteData.h */,
+				FA20D40F185D561900F8CD0B /* FPWriteData.m */,
+			);
+			path = Writable;
+			sourceTree = "<group>";
+		};
+		FA20D416185D562F00F8CD0B /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				FA20D417185D562F00F8CD0B /* FPDataPacket.h */,
+				FA20D418185D562F00F8CD0B /* FPDataPacket.m */,
+				FA20D419185D562F00F8CD0B /* FPDataReceiver.h */,
+				FA20D41A185D562F00F8CD0B /* FPDataReceiver.m */,
+				FA20D41B185D562F00F8CD0B /* FPDataSender.h */,
+				FA20D41C185D562F00F8CD0B /* FPDataSender.m */,
+				FA20D41D185D562F00F8CD0B /* FPSession.h */,
+				FA20D41E185D562F00F8CD0B /* FPSession.m */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
 		FA9723D9185BAD2E0062DA09 = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +196,16 @@
 			children = (
 				FA9723F7185BAD2E0062DA09 /* ANAppDelegate.h */,
 				FA9723F8185BAD2E0062DA09 /* ANAppDelegate.m */,
+				FA20D465185D65D500F8CD0B /* ANConnectView.h */,
+				FA20D466185D65D500F8CD0B /* ANConnectView.m */,
+				FA20D46E185D6B7800F8CD0B /* ANSenderView.h */,
+				FA20D46F185D6B7800F8CD0B /* ANSenderView.m */,
+				FA20D471185D6B8100F8CD0B /* ANReceiverView.h */,
+				FA20D472185D6B8100F8CD0B /* ANReceiverView.m */,
 				FA9723FA185BAD2E0062DA09 /* MainMenu.xib */,
+				FA20D463185D65C100F8CD0B /* ANConnectView.xib */,
+				FA20D46A185D6A8400F8CD0B /* ANSenderView.xib */,
+				FA20D46C185D6A9B00F8CD0B /* ANReceiverView.xib */,
 				FA9723FD185BAD2E0062DA09 /* Images.xcassets */,
 				FA9723EC185BAD2E0062DA09 /* Supporting Files */,
 			);
@@ -146,13 +227,9 @@
 		FA97241F185BAD9C0062DA09 /* FTPProxy */ = {
 			isa = PBXGroup;
 			children = (
-				FAD4C473185CEDA2000DE808 /* Readable */,
-				FAD4C47A185CEDA2000DE808 /* Writable */,
+				FA20D416185D562F00F8CD0B /* Sessions */,
+				FA20D401185D561900F8CD0B /* FTP */,
 				FA972420185BAD9C0062DA09 /* Supporting Files */,
-				FAD4C488185CEE42000DE808 /* FPSession.h */,
-				FAD4C489185CEE42000DE808 /* FPSession.m */,
-				FAD4C484185CEDC8000DE808 /* FPDataSender.h */,
-				FAD4C485185CEDC8000DE808 /* FPDataSender.m */,
 			);
 			path = FTPProxy;
 			sourceTree = "<group>";
@@ -165,30 +242,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FAD4C473185CEDA2000DE808 /* Readable */ = {
-			isa = PBXGroup;
-			children = (
-				FAD4C474185CEDA2000DE808 /* FPListRequest.h */,
-				FAD4C475185CEDA2000DE808 /* FPListRequest.m */,
-				FAD4C476185CEDA2000DE808 /* FPReadable.h */,
-				FAD4C477185CEDA2000DE808 /* FPReadable.m */,
-				FAD4C478185CEDA2000DE808 /* FPReadRequest.h */,
-				FAD4C479185CEDA2000DE808 /* FPReadRequest.m */,
-			);
-			path = Readable;
-			sourceTree = "<group>";
-		};
-		FAD4C47A185CEDA2000DE808 /* Writable */ = {
-			isa = PBXGroup;
-			children = (
-				FAD4C47B185CEDA2000DE808 /* FPWritable.h */,
-				FAD4C47C185CEDA2000DE808 /* FPWritable.m */,
-				FAD4C47D185CEDA2000DE808 /* FPWriteData.h */,
-				FAD4C47E185CEDA2000DE808 /* FPWriteData.m */,
-			);
-			path = Writable;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -196,8 +249,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD4C486185CEDC8000DE808 /* FPDataSender.h in Headers */,
-				FAD4C48A185CEE42000DE808 /* FPSession.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +325,10 @@
 			files = (
 				FA9723F0185BAD2E0062DA09 /* InfoPlist.strings in Resources */,
 				FA9723FE185BAD2E0062DA09 /* Images.xcassets in Resources */,
+				FA20D46D185D6A9B00F8CD0B /* ANReceiverView.xib in Resources */,
+				FA20D464185D65C100F8CD0B /* ANConnectView.xib in Resources */,
 				FA9723F6185BAD2E0062DA09 /* Credits.rtf in Resources */,
+				FA20D46B185D6A8400F8CD0B /* ANSenderView.xib in Resources */,
 				FA9723FC185BAD2E0062DA09 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,13 +340,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA20D470185D6B7800F8CD0B /* ANSenderView.m in Sources */,
+				FA20D420185D562F00F8CD0B /* FPDataReceiver.m in Sources */,
+				FA20D412185D561900F8CD0B /* FPReadable.m in Sources */,
+				FA20D414185D561900F8CD0B /* FPWritable.m in Sources */,
+				FA20D410185D561900F8CD0B /* FPDeleteRequest.m in Sources */,
+				FA20D467185D65D500F8CD0B /* ANConnectView.m in Sources */,
+				FA20D415185D561900F8CD0B /* FPWriteData.m in Sources */,
+				FA20D411185D561900F8CD0B /* FPListRequest.m in Sources */,
+				FA20D413185D561900F8CD0B /* FPReadRequest.m in Sources */,
 				FA9723F2185BAD2E0062DA09 /* main.m in Sources */,
-				FAD4C480185CEDA2000DE808 /* FPReadable.m in Sources */,
+				FA20D473185D6B8100F8CD0B /* ANReceiverView.m in Sources */,
+				FA20D422185D562F00F8CD0B /* FPSession.m in Sources */,
+				FA20D421185D562F00F8CD0B /* FPDataSender.m in Sources */,
 				FA9723F9185BAD2E0062DA09 /* ANAppDelegate.m in Sources */,
-				FAD4C483185CEDA2000DE808 /* FPWriteData.m in Sources */,
-				FAD4C482185CEDA2000DE808 /* FPWritable.m in Sources */,
-				FAD4C47F185CEDA2000DE808 /* FPListRequest.m in Sources */,
-				FAD4C481185CEDA2000DE808 /* FPReadRequest.m in Sources */,
+				FA20D41F185D562F00F8CD0B /* FPDataPacket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +362,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD4C48B185CEE42000DE808 /* FPSession.m in Sources */,
-				FAD4C487185CEDC8000DE808 /* FPDataSender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -96,6 +96,10 @@ static NSMutableArray * writables = nil;
 
 #pragma mark - Private -
 
+- (void)dealloc {
+    [self cancel];
+}
+
 - (NSError *)streamError {
     if (!stream) return nil;
     

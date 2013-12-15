@@ -12,8 +12,13 @@
 
 @property (nonatomic, retain) NSString * remoteDirectory;
 @property (nonatomic, retain) NSString * remoteHost;
+@property (nonatomic, retain) NSString * username;
+@property (nonatomic, retain) NSString * password;
 
 - (NSURL *)urlForRoot;
 - (NSURL *)urlForContainedFile:(NSString *)filename;
+
+- (NSURL *)urlForSegment:(NSInteger)segment;
+- (NSURL *)urlForSegmentEnd:(NSInteger)segment;
 
 @end
