@@ -10,6 +10,9 @@
 #import "ANTelnetClient.h"
 #import "ANTelnetServer.h"
 
+/**
+ * This is a utility to test FTP socket functionality.
+ */
 int main(int argc, const char * argv[]) {
     @autoreleasepool {        
         if (argc != 6) {
