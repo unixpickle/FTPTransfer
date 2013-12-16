@@ -41,6 +41,28 @@
 		FA20D4EC185D78A900F8CD0B /* ANFileDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D4EB185D78A900F8CD0B /* ANFileDescriptor.m */; };
 		FA20D4EF185D78BE00F8CD0B /* ANDirDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D4EE185D78BE00F8CD0B /* ANDirDescriptor.m */; };
 		FA20D4F5185E44CF00F8CD0B /* ANMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D4F4185E44CF00F8CD0B /* ANMainWindow.m */; };
+		FA20D4FC185E5B2D00F8CD0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA20D4FB185E5B2D00F8CD0B /* Foundation.framework */; };
+		FA20D4FF185E5B2D00F8CD0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D4FE185E5B2D00F8CD0B /* main.m */; };
+		FA20D503185E5B2D00F8CD0B /* FTPTelnet.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA20D502185E5B2D00F8CD0B /* FTPTelnet.1 */; };
+		FA20D509185E5BFE00F8CD0B /* ANTelnetClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D508185E5BFE00F8CD0B /* ANTelnetClient.m */; };
+		FA20D50F185E5C3500F8CD0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9723E5185BAD2E0062DA09 /* Cocoa.framework */; };
+		FA20D52E185E5C6000F8CD0B /* FPDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D418185D562F00F8CD0B /* FPDataPacket.m */; };
+		FA20D52F185E5C6000F8CD0B /* FPDataReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D41A185D562F00F8CD0B /* FPDataReceiver.m */; };
+		FA20D530185E5C6000F8CD0B /* FPDataSender.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D41C185D562F00F8CD0B /* FPDataSender.m */; };
+		FA20D531185E5C6000F8CD0B /* FPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D41E185D562F00F8CD0B /* FPSession.m */; };
+		FA20D532185E5C6000F8CD0B /* FPDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D403185D561900F8CD0B /* FPDeleteRequest.m */; };
+		FA20D533185E5C6000F8CD0B /* FPReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D408185D561900F8CD0B /* FPReadable.m */; };
+		FA20D534185E5C6000F8CD0B /* FPListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D406185D561900F8CD0B /* FPListRequest.m */; };
+		FA20D535185E5C6000F8CD0B /* FPReadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D40A185D561900F8CD0B /* FPReadRequest.m */; };
+		FA20D536185E5C6000F8CD0B /* FPWritable.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D40D185D561900F8CD0B /* FPWritable.m */; };
+		FA20D537185E5C6000F8CD0B /* FPWriteData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D40F185D561900F8CD0B /* FPWriteData.m */; };
+		FA20D538185E5C8100F8CD0B /* libFTPProxyStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA20D50E185E5C3500F8CD0B /* libFTPProxyStatic.a */; };
+		FA20D53B185E5E3000F8CD0B /* ANTelnetServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D53A185E5E3000F8CD0B /* ANTelnetServer.m */; };
+		FA20D53E185E5F5F00F8CD0B /* ANClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D53D185E5F5F00F8CD0B /* ANClient.m */; };
+		FA20D542185E5FB400F8CD0B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA20D541185E5FB400F8CD0B /* CFNetwork.framework */; };
+		FA20D545185E794D00F8CD0B /* FPDeleteQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FA20D543185E794D00F8CD0B /* FPDeleteQueue.h */; };
+		FA20D546185E794D00F8CD0B /* FPDeleteQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D544185E794D00F8CD0B /* FPDeleteQueue.m */; };
+		FA20D547185E7DE400F8CD0B /* FPDeleteQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20D544185E794D00F8CD0B /* FPDeleteQueue.m */; };
 		FA9723E6185BAD2E0062DA09 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9723E5185BAD2E0062DA09 /* Cocoa.framework */; };
 		FA9723F0185BAD2E0062DA09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA9723EE185BAD2E0062DA09 /* InfoPlist.strings */; };
 		FA9723F2185BAD2E0062DA09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9723F1185BAD2E0062DA09 /* main.m */; };
@@ -59,6 +81,19 @@
 			remoteInfo = FTPProxy;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA20D4F8185E5B2D00F8CD0B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				FA20D503185E5B2D00F8CD0B /* FTPTelnet.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA20D402185D561900F8CD0B /* FPDeleteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDeleteRequest.h; sourceTree = "<group>"; };
@@ -103,6 +138,23 @@
 		FA20D4EE185D78BE00F8CD0B /* ANDirDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDirDescriptor.m; sourceTree = "<group>"; };
 		FA20D4F3185E44CF00F8CD0B /* ANMainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMainWindow.h; sourceTree = "<group>"; };
 		FA20D4F4185E44CF00F8CD0B /* ANMainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMainWindow.m; sourceTree = "<group>"; };
+		FA20D4FA185E5B2D00F8CD0B /* FTPTelnet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FTPTelnet; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA20D4FB185E5B2D00F8CD0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA20D4FE185E5B2D00F8CD0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA20D501185E5B2D00F8CD0B /* FTPTelnet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTPTelnet-Prefix.pch"; sourceTree = "<group>"; };
+		FA20D502185E5B2D00F8CD0B /* FTPTelnet.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FTPTelnet.1; sourceTree = "<group>"; };
+		FA20D507185E5BFE00F8CD0B /* ANTelnetClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTelnetClient.h; sourceTree = "<group>"; };
+		FA20D508185E5BFE00F8CD0B /* ANTelnetClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTelnetClient.m; sourceTree = "<group>"; };
+		FA20D50E185E5C3500F8CD0B /* libFTPProxyStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFTPProxyStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA20D512185E5C3500F8CD0B /* FTPProxyStatic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTPProxyStatic-Prefix.pch"; sourceTree = "<group>"; };
+		FA20D539185E5E3000F8CD0B /* ANTelnetServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTelnetServer.h; sourceTree = "<group>"; };
+		FA20D53A185E5E3000F8CD0B /* ANTelnetServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTelnetServer.m; sourceTree = "<group>"; };
+		FA20D53C185E5F5F00F8CD0B /* ANClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANClient.h; sourceTree = "<group>"; };
+		FA20D53D185E5F5F00F8CD0B /* ANClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANClient.m; sourceTree = "<group>"; };
+		FA20D53F185E5FA500F8CD0B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FA20D541185E5FB400F8CD0B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FA20D543185E794D00F8CD0B /* FPDeleteQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDeleteQueue.h; sourceTree = "<group>"; };
+		FA20D544185E794D00F8CD0B /* FPDeleteQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDeleteQueue.m; sourceTree = "<group>"; };
 		FA9723E2185BAD2E0062DA09 /* FTPTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9723E5185BAD2E0062DA09 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FA9723E8185BAD2E0062DA09 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -130,6 +182,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA20D4F7185E5B2D00F8CD0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA20D542185E5FB400F8CD0B /* CFNetwork.framework in Frameworks */,
+				FA20D4FC185E5B2D00F8CD0B /* Foundation.framework in Frameworks */,
+				FA20D538185E5C8100F8CD0B /* libFTPProxyStatic.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA20D50B185E5C3500F8CD0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA20D50F185E5C3500F8CD0B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA9723DF185BAD2E0062DA09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +217,8 @@
 			children = (
 				FA20D402185D561900F8CD0B /* FPDeleteRequest.h */,
 				FA20D403185D561900F8CD0B /* FPDeleteRequest.m */,
+				FA20D543185E794D00F8CD0B /* FPDeleteQueue.h */,
+				FA20D544185E794D00F8CD0B /* FPDeleteQueue.m */,
 				FA20D404185D561900F8CD0B /* Readable */,
 				FA20D40B185D561900F8CD0B /* Writable */,
 			);
@@ -232,11 +304,53 @@
 			path = Descriptors;
 			sourceTree = "<group>";
 		};
+		FA20D4FD185E5B2D00F8CD0B /* FTPTelnet */ = {
+			isa = PBXGroup;
+			children = (
+				FA20D4FE185E5B2D00F8CD0B /* main.m */,
+				FA20D507185E5BFE00F8CD0B /* ANTelnetClient.h */,
+				FA20D508185E5BFE00F8CD0B /* ANTelnetClient.m */,
+				FA20D539185E5E3000F8CD0B /* ANTelnetServer.h */,
+				FA20D53A185E5E3000F8CD0B /* ANTelnetServer.m */,
+				FA20D53C185E5F5F00F8CD0B /* ANClient.h */,
+				FA20D53D185E5F5F00F8CD0B /* ANClient.m */,
+				FA20D502185E5B2D00F8CD0B /* FTPTelnet.1 */,
+				FA20D500185E5B2D00F8CD0B /* Supporting Files */,
+			);
+			path = FTPTelnet;
+			sourceTree = "<group>";
+		};
+		FA20D500185E5B2D00F8CD0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA20D501185E5B2D00F8CD0B /* FTPTelnet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA20D510185E5C3500F8CD0B /* FTPProxyStatic */ = {
+			isa = PBXGroup;
+			children = (
+				FA20D511185E5C3500F8CD0B /* Supporting Files */,
+			);
+			path = FTPProxyStatic;
+			sourceTree = "<group>";
+		};
+		FA20D511185E5C3500F8CD0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA20D512185E5C3500F8CD0B /* FTPProxyStatic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		FA9723D9185BAD2E0062DA09 = {
 			isa = PBXGroup;
 			children = (
 				FA9723EB185BAD2E0062DA09 /* FTPTransfer */,
 				FA97241F185BAD9C0062DA09 /* FTPProxy */,
+				FA20D4FD185E5B2D00F8CD0B /* FTPTelnet */,
+				FA20D510185E5C3500F8CD0B /* FTPProxyStatic */,
 				FA9723E4185BAD2E0062DA09 /* Frameworks */,
 				FA9723E3185BAD2E0062DA09 /* Products */,
 			);
@@ -247,6 +361,8 @@
 			children = (
 				FA9723E2185BAD2E0062DA09 /* FTPTransfer.app */,
 				FA20D493185D722400F8CD0B /* FTPProxy.framework */,
+				FA20D4FA185E5B2D00F8CD0B /* FTPTelnet */,
+				FA20D50E185E5C3500F8CD0B /* libFTPProxyStatic.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,8 +370,11 @@
 		FA9723E4185BAD2E0062DA09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA20D541185E5FB400F8CD0B /* CFNetwork.framework */,
+				FA20D53F185E5FA500F8CD0B /* CoreFoundation.framework */,
 				FA9723E5185BAD2E0062DA09 /* Cocoa.framework */,
 				FA972404185BAD2E0062DA09 /* XCTest.framework */,
+				FA20D4FB185E5B2D00F8CD0B /* Foundation.framework */,
 				FA9723E7185BAD2E0062DA09 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -336,6 +455,14 @@
 				FA20D4C8185D726E00F8CD0B /* FPReadRequest.h in Headers */,
 				FA20D4C9185D726E00F8CD0B /* FPWritable.h in Headers */,
 				FA20D4CA185D726E00F8CD0B /* FPWriteData.h in Headers */,
+				FA20D545185E794D00F8CD0B /* FPDeleteQueue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA20D50C185E5C3500F8CD0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +486,40 @@
 			productName = FTPProxy;
 			productReference = FA20D493185D722400F8CD0B /* FTPProxy.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		FA20D4F9185E5B2D00F8CD0B /* FTPTelnet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA20D504185E5B2D00F8CD0B /* Build configuration list for PBXNativeTarget "FTPTelnet" */;
+			buildPhases = (
+				FA20D4F6185E5B2D00F8CD0B /* Sources */,
+				FA20D4F7185E5B2D00F8CD0B /* Frameworks */,
+				FA20D4F8185E5B2D00F8CD0B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTPTelnet;
+			productName = FTPTelnet;
+			productReference = FA20D4FA185E5B2D00F8CD0B /* FTPTelnet */;
+			productType = "com.apple.product-type.tool";
+		};
+		FA20D50D185E5C3500F8CD0B /* FTPProxyStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA20D528185E5C3500F8CD0B /* Build configuration list for PBXNativeTarget "FTPProxyStatic" */;
+			buildPhases = (
+				FA20D50A185E5C3500F8CD0B /* Sources */,
+				FA20D50B185E5C3500F8CD0B /* Frameworks */,
+				FA20D50C185E5C3500F8CD0B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTPProxyStatic;
+			productName = FTPProxyStatic;
+			productReference = FA20D50E185E5C3500F8CD0B /* libFTPProxyStatic.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		FA9723E1185BAD2E0062DA09 /* FTPTransfer */ = {
 			isa = PBXNativeTarget;
@@ -403,6 +564,8 @@
 			targets = (
 				FA9723E1185BAD2E0062DA09 /* FTPTransfer */,
 				FA20D492185D722300F8CD0B /* FTPProxy */,
+				FA20D4F9185E5B2D00F8CD0B /* FTPTelnet */,
+				FA20D50D185E5C3500F8CD0B /* FTPProxyStatic */,
 			);
 		};
 /* End PBXProject section */
@@ -444,7 +607,37 @@
 				FA20D4BC185D725200F8CD0B /* FPReadable.m in Sources */,
 				FA20D4BD185D725500F8CD0B /* FPListRequest.m in Sources */,
 				FA20D4BE185D725800F8CD0B /* FPReadRequest.m in Sources */,
+				FA20D546185E794D00F8CD0B /* FPDeleteQueue.m in Sources */,
 				FA20D4C0185D725E00F8CD0B /* FPWriteData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA20D4F6185E5B2D00F8CD0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA20D4FF185E5B2D00F8CD0B /* main.m in Sources */,
+				FA20D509185E5BFE00F8CD0B /* ANTelnetClient.m in Sources */,
+				FA20D53B185E5E3000F8CD0B /* ANTelnetServer.m in Sources */,
+				FA20D53E185E5F5F00F8CD0B /* ANClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA20D50A185E5C3500F8CD0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA20D52E185E5C6000F8CD0B /* FPDataPacket.m in Sources */,
+				FA20D52F185E5C6000F8CD0B /* FPDataReceiver.m in Sources */,
+				FA20D530185E5C6000F8CD0B /* FPDataSender.m in Sources */,
+				FA20D531185E5C6000F8CD0B /* FPSession.m in Sources */,
+				FA20D532185E5C6000F8CD0B /* FPDeleteRequest.m in Sources */,
+				FA20D533185E5C6000F8CD0B /* FPReadable.m in Sources */,
+				FA20D534185E5C6000F8CD0B /* FPListRequest.m in Sources */,
+				FA20D535185E5C6000F8CD0B /* FPReadRequest.m in Sources */,
+				FA20D536185E5C6000F8CD0B /* FPWritable.m in Sources */,
+				FA20D537185E5C6000F8CD0B /* FPWriteData.m in Sources */,
+				FA20D547185E7DE400F8CD0B /* FPDeleteQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +728,50 @@
 				INFOPLIST_FILE = "FTPProxy/FTPProxy-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		FA20D505185E5B2D00F8CD0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTPTelnet/FTPTelnet-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA20D506185E5B2D00F8CD0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTPTelnet/FTPTelnet-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA20D529185E5C3500F8CD0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTPProxyStatic/FTPProxyStatic-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA20D52A185E5C3500F8CD0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTPProxyStatic/FTPProxyStatic-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -640,6 +877,22 @@
 			buildConfigurations = (
 				FA20D4B2185D722400F8CD0B /* Debug */,
 				FA20D4B3185D722400F8CD0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA20D504185E5B2D00F8CD0B /* Build configuration list for PBXNativeTarget "FTPTelnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA20D505185E5B2D00F8CD0B /* Debug */,
+				FA20D506185E5B2D00F8CD0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA20D528185E5C3500F8CD0B /* Build configuration list for PBXNativeTarget "FTPProxyStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA20D529185E5C3500F8CD0B /* Debug */,
+				FA20D52A185E5C3500F8CD0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

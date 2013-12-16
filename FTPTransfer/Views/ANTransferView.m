@@ -37,6 +37,8 @@
 
 - (void)transfer:(id)sender bytesUpdated:(UInt64)bytes {
     bytesLabel.stringValue = [NSString stringWithFormat:@"%llu bytes transferred", bytes];
+    double prog = (double)bytes / (double)transfer.totalSize;
+    progress.doubleValue = prog;
 }
 
 - (void)transfer:(id)sender filesUpdated:(UInt64)files {

@@ -16,10 +16,10 @@ typedef void (^FPDeleteCallback)(NSError * error);
 
 @property (nonatomic, retain) NSString * username;
 @property (nonatomic, retain) NSString * password;
-@property (nonatomic, retain) NSURL * url;
+@property (nonatomic, retain) NSArray * urls;
 @property (nonatomic, copy) FPDeleteCallback callback;
 
-- (NSURL *)authenticatedURL;
+- (NSURL *)authenticatedURL:(NSURL *)aURL;
 - (void)start;
 - (void)cancel;
 

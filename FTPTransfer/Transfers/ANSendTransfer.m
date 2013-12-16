@@ -35,7 +35,7 @@
     stream = [[FPDataSender alloc] initWithBufferSize:kANSendTransferBufferSize];
     stream.username = self.username;
     stream.password = self.password;
-    stream.remoteDirectory = self.path;
+    stream.remoteDirectory = [self.path hasPrefix:@"/"] ? self.path : [@"/" stringByAppendingString:self.path];
     stream.remoteHost = self.host;
     stream.delegate = self;
     [stream initiateStream];
@@ -87,6 +87,7 @@
     NSData * more = [currentHandle readDataOfLength:kANSendTransferBufferSize];
     if (more.length == 0) {
         sentFiles++;
+        [self.delegate transfer:self filesUpdated:sentFiles];
         [currentHandle closeFile];
         currentHandle = nil;
         return [self startNextFile];
@@ -99,17 +100,16 @@
 - (void)startNextFile {
     if (fileList.count == 0) {
         [stream endStream];
+        return;
     }
     
     ANFileDescriptor * file = fileList[0];
     [fileList removeObjectAtIndex:0];
     
-    [self.delegate transfer:self filesUpdated:sentFiles];
-    [self.delegate transfer:self
-              statusUpdated:[NSString stringWithFormat:@"Sending %@", file.relativePath]];
+    [self.delegate transfer:self statusUpdated:[NSString stringWithFormat:@"Sending %@", file.relativePath]];
     
     // encode the file descriptor and begin to send it
-    NSData * encoded;
+    NSData * encoded = [file encodeDescriptor];
     NSMutableData * nextPacket = [NSMutableData data];
     [nextPacket appendData:encoded];
     
@@ -119,6 +119,8 @@
         NSInteger sendSize = kANSendTransferBufferSize - encoded.length;
         NSData * buff = [currentHandle readDataOfLength:sendSize];
         [nextPacket appendData:buff];
+        written += buff.length;
+        [self.delegate transfer:self bytesUpdated:written];
     }
     
     [stream writeData:nextPacket];

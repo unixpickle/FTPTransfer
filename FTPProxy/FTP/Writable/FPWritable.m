@@ -43,7 +43,7 @@ static NSMutableArray * writables = nil;
     context.copyDescription = NULL;
     context.version = 0;
     
-    CFWriteStreamSetClient(stream, kCFStreamEventErrorOccurred | kCFStreamEventCanAcceptBytes,
+    CFWriteStreamSetClient(stream, kCFStreamEventErrorOccurred | kCFStreamEventCanAcceptBytes | kCFStreamEventEndEncountered,
                            _FPWritableCallback, &context);
     CFWriteStreamScheduleWithRunLoop(stream, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
     if (!CFWriteStreamOpen(stream)) {
@@ -56,8 +56,6 @@ static NSMutableArray * writables = nil;
         writables = [[NSMutableArray alloc] init];
     }
     if (![writables containsObject:self]) [writables addObject:self];
-    
-    if (buffer.length > 0) [self writeLoop];
     return YES;
 }
 
@@ -75,6 +73,8 @@ static NSMutableArray * writables = nil;
         [self writeLoop];
     } else if (event == kCFStreamEventErrorOccurred) {
         [self handleError];
+    } else if (event == kCFStreamEventEndEncountered) {
+        [self handleDone];
     }
 }
 

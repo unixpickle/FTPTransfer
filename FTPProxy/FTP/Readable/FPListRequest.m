@@ -20,18 +20,18 @@
 }
 
 - (void)handleFTPDone {
-    CFDictionaryRef dict;
-    CFIndex consumed = CFFTPCreateParsedResourceListing(NULL, rawData.bytes,
-                                                        rawData.length, &dict);
+    NSMutableArray * allFiles = [NSMutableArray array];
     
-    if (consumed != rawData.length) {
-        self.callback([NSError errorWithDomain:@"CFFTP"
-                                          code:0
-                                      userInfo:@{NSLocalizedDescriptionKey: @"CFFTPCreateParsedResourceListing failed"}], nil);
-        return;
+    while (YES) {
+        CFDictionaryRef dict = NULL;
+        CFIndex consumed = CFFTPCreateParsedResourceListing(NULL, rawData.bytes,
+                                                            rawData.length, &dict);
+        if (!consumed || !dict) break;
+        [allFiles addObject:(__bridge_transfer NSDictionary *)dict];
+        [rawData replaceBytesInRange:NSMakeRange(0, consumed) withBytes:NULL length:0];
     }
     
-    self.callback(nil, (__bridge_transfer NSDictionary *)dict);
+    self.callback(nil, allFiles);
 }
 
 @end

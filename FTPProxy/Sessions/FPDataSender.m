@@ -87,6 +87,8 @@
     FPDataPacket * close = [[FPDataPacket alloc] initWithType:FPDataPacketTypeEOF body:[NSData data]];
     [packets addObject:close];
     isEnded = YES;
+    
+    if (!currentWriter && hasBegun) [self sendNextPacket];
 }
 
 - (void)forceClose {

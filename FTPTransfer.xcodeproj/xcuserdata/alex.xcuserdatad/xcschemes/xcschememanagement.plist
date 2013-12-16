@@ -14,6 +14,16 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>FTPProxyStatic.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>FTPTelnet.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>FTPTransfer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +43,21 @@
 			<true/>
 		</dict>
 		<key>FA20D4CD185D72AD00F8CD0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA20D4F9185E5B2D00F8CD0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA20D50D185E5C3500F8CD0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA20D519185E5C3500F8CD0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

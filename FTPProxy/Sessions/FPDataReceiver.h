@@ -9,7 +9,8 @@
 #import "FPSession.h"
 #import "FPListRequest.h"
 #import "FPReadRequest.h"
-#import "FPDeleteRequest.h"
+#import "FPDeleteQueue.h"
+#import "FPDataPacket.h"
 
 @protocol FPDataReceiverDelegate
 
@@ -19,13 +20,16 @@
 
 @end
 
-@interface FPDataReceiver : FPSession {
+@interface FPDataReceiver : FPSession <FPDeleteQueueDelegate> {
     NSInteger sequence;
     FPReadable * currentReader;
-    FPDeleteRequest * currentDelete;
+    FPDeleteQueue * deleteQueue;
+    
+    BOOL completionPending;
 }
 
 @property (nonatomic, weak) id<FPDataReceiverDelegate> delegate;
+@property (readwrite) BOOL deleteSource;
 
 - (void)startReading;
 - (void)cancelReading;

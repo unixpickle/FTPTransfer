@@ -48,6 +48,16 @@
                ReferencedContainer = "container:FTPTransfer.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FA20D519185E5C3500F8CD0B"
+               BuildableName = "FTPProxyStaticTests.xctest"
+               BlueprintName = "FTPProxyStaticTests"
+               ReferencedContainer = "container:FTPTransfer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

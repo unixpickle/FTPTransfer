@@ -27,8 +27,9 @@
     
     [window center];
     [window makeKeyAndOrderFront:nil];
+    [window setReleasedWhenClosed:NO];
     
-    __weak ANMainWindow * theWindow = window;
+    __unsafe_unretained id theWindow = window;
     connect.callback = ^(ANTransfer * t) {
         ANTransferView * view = [self createClass:[ANTransferView class] fromNib:@"ANTransferView"];
         view.doneCallback = ^() {

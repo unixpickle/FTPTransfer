@@ -66,7 +66,7 @@ static NSMutableArray * readables = nil;
 
 - (void)handleFTPEvent:(CFStreamEventType)event {
     // do something in sub-class
-    if (event == kCFStreamEventCanAcceptBytes) {
+    if (event == kCFStreamEventHasBytesAvailable) {
         NSMutableData * data = [NSMutableData data];
         UInt8 * buffer = (UInt8 *)malloc(65536);
         while (CFReadStreamHasBytesAvailable(stream)) {

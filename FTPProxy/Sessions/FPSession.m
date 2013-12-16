@@ -12,8 +12,8 @@
 
 - (NSURL *)urlForRoot {
     NSString * dirPath = self.remoteDirectory;
-    if (![dirPath hasSuffix:@"/"]) dirPath = [dirPath stringByAppendingString:@"/"];
-    return [[NSURL alloc] initWithScheme:@"ftp" host:self.remoteHost path:dirPath];
+    if ([dirPath hasSuffix:@"/"]) dirPath = [dirPath substringToIndex:(dirPath.length - 1)];
+    return [[[NSURL alloc] initWithScheme:@"ftp" host:self.remoteHost path:dirPath] URLByAppendingPathComponent:@"/"];
 }
 
 - (NSURL *)urlForContainedFile:(NSString *)filename {

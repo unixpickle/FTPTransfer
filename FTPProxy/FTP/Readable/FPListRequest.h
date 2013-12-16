@@ -8,7 +8,7 @@
 
 #import "FPReadable.h"
 
-typedef void (^FPListCallback)(NSError * error, NSDictionary * listing);
+typedef void (^FPListCallback)(NSError * error, NSArray * listing);
 
 @interface FPListRequest : FPReadable {
     NSMutableData * rawData;
